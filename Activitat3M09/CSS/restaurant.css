@@ -1,0 +1,245 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+/* Menú principal */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    background-color: black;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+}
+.elemnav {
+    color: white;
+    text-decoration: none;
+    margin-inline: 25px;
+    font-size: 0.8em;
+}
+.elemnav:hover{
+    text-decoration: underline;
+}
+/* Header Imatges */
+
+.header_main img {
+    width: 100%;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ffffff;
+}
+.center2{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+.center3{
+    position: absolute;
+    top: 60%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.material-icons, .elemfooter, .text {
+    font-size: 0.4em;
+    color: white;
+}
+
+.material-icons {
+    margin-right: 5px;
+}
+
+.elemfooter {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 0.4em;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 23px;
+}
+
+.sobrenosaltres {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.titol1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.box {
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.texto1, .texto2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.texto1 {
+    float: left;
+    font-size: 0.7em;
+}
+
+.texto2 {
+    float: right;
+    font-size: 0.7em;
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+.imagecarta {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.carta{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 10px;
+}
+.menu > div {
+    text-align: center;
+    padding: 20px 0;
+}
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+.item2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.item4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.item5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+.item6 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+.item7 {
+
+}
+.item8 {
+
+}
+.item9 {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+        background-color: #fffefe;
+        position: fixed;
+        padding: 20px;
+        width: 100%;
+        top: 0;
+    }
+    .elemnav {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-inline: 25px;
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    
+}
