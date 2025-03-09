@@ -1,0 +1,336 @@
+html, body{
+    margin: 0; /* Elimina marges per defecte */
+    padding: 0; /* Elimina espais interiors per defecte */
+    font-family: 'Courier New', Courier, monospace; /* Defineix la font per defecte */
+    font-size: 1em; /* Estableix la mida de la font */
+}
+
+/* Menú principal */
+.menu{
+    display: flex; /* Utilitza Flexbox per organitzar els elements */
+    flex-direction: row; /* Els elements es disposen horitzontalment */
+    justify-content: flex-end; /* Alinea els elements a la dreta */
+    gap: 30px; /* Espai entre els elements */
+    background-color: black; /* Fons negre */
+    position: fixed; /* Fixat a la part superior de la pàgina */
+    padding: 20px; /* Espai intern del menú */
+    width: 100%; /* Amplada completa de la pàgina */
+    top: 0; /* Col·loca el menú a la part superior */
+}
+
+/* Estil dels enllaços del menú */
+.elemnav {
+    color: white; /* Color de text blanc */
+    text-decoration: none; /* Elimina la subratllat dels enllaços */
+    margin-inline: 25px; /* Margen horitzontal entre enllaços */
+    font-size: 0.8em; /* Mida de la font més petita */
+}
+
+/* Canvi d'estil al passar el ratolí */
+.elemnav:hover{
+    text-decoration: underline; /* Afageix subratllat quan el ratolí passa per sobre */
+}
+
+/* Header d'imatges */
+.header_main img {
+    width: 100%; /* Fa que la imatge ocupi tota l'amplada */
+}
+
+/* Text central en imatges */
+.center{
+    position: absolute; /* Posiciona de forma absoluta */
+    top: 50%; /* Alinea al mig de la pantalla verticalment */
+    left: 23%; /* Alinea al mig de la pantalla horitzontalment */
+    transform: translate(-50%, -50%); /* Ajusta per centrar l'element exactament */
+    font-size: 2em; /* Mida de la font gran */
+    color: #ffffff; /* Text blanc */
+}
+
+/* Un altre text central amb estil diferent */
+.center2{
+    position: absolute; 
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold; /* Fa que el text sigui negre */
+}
+
+/* Tercer text central amb font més petita */
+.center3{
+    position: absolute;
+    top: 60%; /* Desplaça el text més avall */
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Footer de la pàgina */
+.footer {
+    display: flex; /* Utilitza Flexbox per disposar els elements */
+    flex-direction: row; /* Elements horitzontals */
+    justify-content: space-between; /* Espai entre els elements */
+    align-items: center; /* Centra els elements verticalment */
+    background-color: black; /* Fons negre */
+    position: fixed; /* Fixat a la part inferior de la pàgina */
+    padding: 2px; /* Espai intern */
+    width: 100%; /* Amplada completa de la pàgina */
+    bottom: 0; /* Col·loca el footer a la part inferior */
+}
+
+/* Estils per als ícons i textos dins del footer */
+.material-icons, .elemfooter, .text {
+    font-size: 0.4em; /* Font més petita */
+    color: white; /* Color de text blanc */
+}
+
+.material-icons {
+    margin-right: 5px; /* Espai a la dreta dels ícons */
+}
+
+/* Element dins del footer */
+.elemfooter {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Text a la dreta dins del footer */
+.text {
+    font-size: 0.4em;
+    text-align: right; /* Alinea el text a la dreta */
+    margin-left: auto; /* Empitja el text cap a la dreta */
+    margin-right: 23px;
+}
+
+/* Secció de 'sobre nosaltres' */
+.sobrenosaltres {
+    max-width: 800px; /* Amplada màxima */
+    margin: 0 auto; /* Centra el contingut */
+    overflow: hidden; /* Evita que el contingut surti de l'àrea definida */
+}
+
+/* Títol de la secció */
+.titol1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em; /* Mida de la font */
+}
+
+/* Caixes que es disposen de forma flexible */
+.box {
+    float: left; /* Col·loca les caixes a l'esquerra */
+    width: 48%; /* Amplada de cada caixa */
+    margin: 1%; /* Margen entre caixes */
+    padding: 20px; /* Espai intern */
+    box-sizing: border-box; /* Inclou el padding en l'amplada total */
+}
+
+/* Estils per a les imatges dins de les caixes */
+.box img {
+    width: 100%; /* Amplada màxima de la imatge */
+    height: auto; /* Mantenir la proporció de l'alçada */
+    margin-bottom: 20px; /* Espai a sota de la imatge */
+    border-radius: 8px; /* Arrodoneix les cantonades de la imatge */
+}
+
+/* Estil de textos dins de les caixes */
+.texto1, .texto2 {
+    width: 100%; /* Amplada completa */
+    text-align: left; /* Alineació a l'esquerra */
+    margin-bottom: 10px; /* Espai a sota dels textos */
+}
+
+/* Text dins de la caixa 1 */
+.texto1 {
+    float: left; /* Col·loca el text a l'esquerra */
+    font-size: 0.7em; /* Mida de la font més petita */
+}
+
+/* Text dins de la caixa 2 */
+.texto2 {
+    float: right; /* Col·loca el text a la dreta */
+    font-size: 0.7em; /* Mida de la font més petita */
+}
+
+/* Tots els elements utilitzen 'box-sizing: border-box' per una mida consistent */
+* {box-sizing: border-box}
+
+/* Contenidor per a les cartes */
+.container {
+    position: relative; /* Posicionament relativ */
+    width: 100%;
+    max-width: 250px; /* Amplada màxima */
+}
+
+/* Estils per a les imatges de les cartes */
+.imagecarta {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes arrodonides */
+}
+
+/* Superposició que apareix quan es passa el ratolí per sobre */
+.overlay {
+    position: absolute; /* Posiciona de manera absoluta */
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fons fosc amb opacitat */
+    color: white;
+    width: 100%;
+    text-align: center; /* Centra el text */
+    font-size: 1.2em;
+    padding: 10px; /* Espai intern */
+    opacity: 0; /* Inicia invisible */
+    transition: 0.5s; /* Transició suau */
+    border-radius: 10px; /* Bordes arrodonides */
+}
+
+/* Quan es passa el ratolí per sobre, la superposició es fa visible */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* Estils per a les cartes de la galeria */
+.carta {
+    display: grid; /* Utilitza Grid per organitzar les cartes */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnes iguals */
+    grid-template-rows: auto auto auto; /* Tres files automàtiques */
+    width: 80%; /* Amplada del contenidor */
+    margin: 40px auto; /* Centrat amb marges */
+    gap: 20px; /* Espai entre les cartes */
+    padding: 20px;
+    align-items: center; /* Centra els elements verticalment */
+    text-align: center; /* Centra els textos */
+}
+
+/* Estils per als elements dins del menú */
+.menu > div {
+    text-align: center; /* Centra els elements */
+    padding: 20px 0; /* Espai superior i inferior */
+}
+
+/* Estils per als elements individuals */
+.item1, .item6 {
+    grid-column: 1 / -1; /* Ocupa tota l'amplada */
+    font-size: 1.8em; /* Font gran */
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f8f8f8; /* Fons clar */
+    border-radius: 10px; /* Arrodoneix les cantonades */
+}
+
+.item2, .item6 {
+    grid-row: span 2; /* Ocupa dues files */
+    display: flex;
+    align-items: center; /* Centra verticalment */
+    justify-content: center; /* Centra horitzontalment */
+    font-size: 1.4em; /* Mida de la font */
+    font-weight: bold;
+    background-color: #eee; /* Fons clar */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Estils per a altres elements */
+.item3, .item7 {
+    grid-column: 2 / 4; /* Ocupa de la columna 2 a la 4 */
+    background-color: #fff; /* Fons blanc */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra suau */
+    text-align: left; /* Alinea el text a l'esquerra */
+}
+
+.item4, .item5, .item8, .item9 {
+    display: flex;
+    justify-content: center; /* Centra el contingut */
+    align-items: center; /* Centra el contingut */
+}
+
+/* Reserva */
+.reserva {
+    width: 50%;
+    margin: 50px auto; /* Centra el formulari */
+    padding: 20px;
+    background-color: #f8f8f8; /* Fons clar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra suau */
+}
+
+.reserva h2 {
+    text-align: center; /* Centra el títol */
+    font-size: 1.8em; /* Mida de la font */
+}
+
+/* Estils per als grups de formulari */
+.form-group {
+    margin-bottom: 15px; /* Espai a sota de cada grup */
+}
+
+/* Estils per als labels */
+label {
+    display: block; /* Fa que el label sigui bloc */
+    font-weight: bold; /* Text en negreta */
+    margin-bottom: 5px; /* Espai a sota del label */
+}
+
+/* Estils per als inputs, textareas i selects */
+input, textarea, select {
+    width: 100%; /* Amplada total */
+    padding: 8px; /* Espai interior */
+    border: 1px solid #ccc; /* Borde gris clar */
+    border-radius: 5px; /* Bordes arrodonides */
+}
+
+textarea {
+    height: 80px; /* Alçada per al textarea */
+}
+
+/* Botó de reserva */
+.boto-reserva {
+    display: flex;
+    justify-content: flex-end; /* Col·loca el botó a la dreta */
+    margin-top: 20px; /* Espai superior */
+}
+
+/* Estils per al botó */
+button {
+    background-color: #333; /* Fons fosc */
+    color: white; /* Text blanc */
+    padding: 10px 20px; /* Espai intern */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes arrodonides */
+    cursor: pointer; /* Canvia el cursor a mà */
+}
+
+/* Estil quan el botó es passa el ratolí per sobre */
+button:hover {
+    background-color: #555; /* Fons més clar */
+}
+
+/* Media queries per a pantalles petites */
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+        background-color: #fffefe;
+        position: fixed;
+        padding: 20px;
+        width: 100%;
+        top: 0;
+    }
+    .elemnav {
+        color: rgb(0, 0, 0); /* Text negre per a pantalles petites */
+        text-decoration: none;
+        margin-inline: 25px;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+}
